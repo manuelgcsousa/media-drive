@@ -24,7 +24,7 @@ $ sudo umount UUID=<DEVICE_UUID>
 
 <br>
 
-### Example usage:
+### Usage example:
 ```bash
 #!/usr/bin/bash
 
