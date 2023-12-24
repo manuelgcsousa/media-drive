@@ -22,8 +22,6 @@ Unmount drive before ejecting:
 $ sudo umount UUID=<DEVICE_UUID>
 ```
 
-<br>
-
 ### Usage example:
 ```bash
 #!/usr/bin/bash
