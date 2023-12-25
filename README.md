@@ -26,10 +26,11 @@ $ sudo umount UUID=<DEVICE_UUID>
 ```bash
 #!/usr/bin/bash
 
+USER_UID="..."
 DEVICE_UUID="..."
-MOUNT_FOLDER="..."
+MOUNT_FOLDER="/mnt/..."
 
-MOUNT="sudo mount -o rw,users,uid=<USER_UID>,dmask=007,fmask=117 UUID=<DEVICE_UUID> /mnt/<MOUNT_FOLDER>"
+MOUNT="sudo mount -o rw,users,uid=$USER_UID,dmask=007,fmask=117 UUID=$DEVICE_UUID $MOUNT_FOLDER"
 UNMOUNT="sudo umount UUID=$DEVICE_UUID"
 
 # mount drive and defer unmount
